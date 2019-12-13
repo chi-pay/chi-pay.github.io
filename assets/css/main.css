@@ -3223,7 +3223,7 @@ h2 {
 
 .reel {
         animation: slideInFromLeft infinite;
-        animation-duration: 120s;
+        animation-duration: 70s;
         overflow: hidden;
         display: inline-flex;
 
@@ -3234,6 +3234,10 @@ h2 {
 }
 .reel article {
     overflow: hidden;
-   
-    
+     
 }
+
+ .forward, .backward{
+    display: none !important;
+}
+
