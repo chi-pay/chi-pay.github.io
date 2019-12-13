@@ -2739,7 +2739,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 771px) {
 
 		/* Basic */
 
@@ -3152,7 +3152,7 @@ a img {
     transition: transform 0.3s ease;
 }
 
-a:hover img {
+article:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
@@ -3175,3 +3175,65 @@ h2 {
     font-size: 1.8em; important!
 }
 
+@-webkit-keyframes flasher {
+  0%   { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@-moz-keyframes flasher {
+  0%   { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@-o-keyframes flasher {
+  0%   { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@keyframes flasher {
+  0%   { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.flasher {
+  -webkit-animation: flasher 5s infinite; /* Safari 4+ */
+  -moz-animation:    flasher 5s infinite; /* Fx 5+ */
+  -o-animation:      flasher 5s infinite; /* Opera 12+ */
+  animation:         flasher 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(0);
+  }
+  
+    50% {
+        transform: translateX(-40%)
+    }
+    
+    100% {
+        transform: translateX(0%)
+    }
+    
+    
+    
+  
+}
+
+.reel {
+        animation: slideInFromLeft infinite;
+        animation-duration: 120s;
+        overflow: hidden;
+        display: inline-flex;
+
+}
+
+.reel:hover {
+    animation-play-state: paused;
+}
+.reel article {
+    overflow: hidden;
+   
+    
+}
