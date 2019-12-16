@@ -3171,8 +3171,15 @@ p {
 
 }
 
+h1 {
+    font-family: 'Open Sans', sans-serif !important;
+
+}
+
 h2 {
     font-size: 1.8em; important!
+    font-family: 'Open Sans', sans-serif !important;
+
 }
 
 @-webkit-keyframes flasher {
@@ -3241,3 +3248,26 @@ h2 {
     display: none !important;
 }
 
+
+#loading {
+   background:url('../../images/25.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999 !important;
+    background-color: #130026;
+}
+
+.grey_strong {
+    color:#d6b4f4;
+    font-style: bold;
+}
+
+.half_width_center {
+    width: 70% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
