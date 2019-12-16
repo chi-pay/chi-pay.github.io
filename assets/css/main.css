@@ -3291,3 +3291,23 @@ h2 {
 img, article {
       border-radius: 2% !important;
 }
+
+#fixedbutton {
+    position: fixed;
+    bottom: 10px;
+    opacity: 0.6;
+    right: 20px; 
+    z-index: 999999999;
+    height: 90px;
+}
+
+.chi {
+position: relative !important;
+vertical-align: 15%;
+font-weight: 550;
+font-family: 'EB Garamond', serif;
+margin-top: -10px !important;
+}
+#bottombut {
+    height: 50px;
+}
